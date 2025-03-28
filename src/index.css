@@ -1,0 +1,139 @@
+:root {
+    --primary-color: #0657fa;
+    --text-color: #f5f5f5;
+    --background-color: #0a0a0d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    height: 80px;
+}
+
+header section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+    max-width: 1176px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo .lang {
+    position: relative;
+    top: -8px;
+    left: -5px;
+    font-size: 12px;
+    background: var(--text-color);
+    color: var(--primary-color);
+    border-radius: 20px;
+    padding: 6px 10px;
+    transform: scale(0.6);
+    transform-origin: top left;
+    line-height: 1;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-size: 13.6px;
+    min-width: 123px;
+    min-height: 40px;
+    text-decoration: none;
+    gap: 10px;
+}
+
+.btn.chrome-extension {
+    width: 170px;
+    margin: 50px 0;
+}
+
+main {
+    max-width: 1176px;
+    margin: 0 auto;
+}
+
+.banner {
+    padding: 200px 0 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: radial-gradient(circle farthest-corner at 50% 0%,#0a0a0d 15%,#0e097200),linear-gradient(180deg,#0a0a0d00 6%,#8b4dff 75%,#b97dff 90%,#de9cff);
+    border-bottom-right-radius: 56px;
+    border-bottom-left-radius: 56px;
+}
+
+.banner h1 {
+    font-size: 80px;
+}
+
+
+footer {
+    padding: 50px 0 0;
+    color: var(--text-color);
+    text-align: center;
+}
+
+footer section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1176px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    line-height: 1;
+}
+
+footer .text {
+    opacity: 0.5;
+}
+
+footer a {
+    color: var(--text-color);
+}
+
+footer .entry {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer .entry img {
+    height: 30px;
+}
+
+footer .iconlake {
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border-radius: 6px;
+}
